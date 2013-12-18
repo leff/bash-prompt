@@ -1,0 +1,11 @@
+
+COLOR_SYS_MAIN="\[\e[1;36;44m\]"
+COLOR_SYS_HIGHLIGHT="\[\e[1;34;44m\]"
+
+COLOR_PWD="\[\e[1;37;46m\]"
+
+COLOR_HG_DEFAULT="\[\e[1;36;44m\]"
+COLOR_HG_BRANCH="\[\e[1;36;47m\]"
+COLOR_GIT="\[\e[1;36;44m\]"
+
+COLOR_VENV="\[\e[1;37;46m\]"

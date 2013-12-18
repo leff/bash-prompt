@@ -49,15 +49,13 @@ function shorten_pwd
     echo $newPWD
 }
 
-
 COLOR_RESET="\[\e[0m\]"
-COLOR_SYS_MAIN="\[\e[01;37;45m\]"
-COLOR_SYS_HIGHLIGHT="\[\e[0;30;45m\]"
-COLOR_PWD="\[\e[0;30;46m\]"
-COLOR_VENV="\[\e[01;37;44m\]"
-COLOR_HG_DEFAULT="\[\e[00;30;42m\]"
-COLOR_HG_BRANCH="\[\e[01;30;43m\]"
-COLOR_GIT="\[\e[01;37;42m\]"
+if [[ -z $THEME ]]
+then
+    THEME="default"
+fi
+ME=${BASH_SOURCE[0]}
+source ${ME/%ps1/}themes/${THEME}.theme
 
 
 HG_BRANCH=`hg branch 2>&1`
